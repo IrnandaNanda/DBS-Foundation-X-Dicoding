@@ -1,0 +1,34 @@
+/* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+a:link {
+    color: red;
+ }
+ 
+ /* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+ a:visited {
+    color: skyblue;
+ }
+ 
+ /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+ a:hover {
+    color: pink;
+ }
+ 
+ /* rule akan diterapkan pada sebuah tautan ketika ditekan */
+ a:active {
+    color:orange;
+ }
+
+ blockquote::before,
+blockquote::after {
+  content: '"';
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Rule styling akan diterapkan pada karakter pertama di sebuah paragraf */
+p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+    color: saddlebrown;
+  }

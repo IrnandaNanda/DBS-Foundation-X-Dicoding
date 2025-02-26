@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+/* Merubah Font Pada Seluruh Halaman body */
+body {
+    font-family: Quicksand , Cursive;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menetapkan Warna pada setiap elemen yang diperlukan */
+
+/* Karena Styling h2 dan h3 sama maka kita gabungkan dengan teknik yang bernama group selector */
+h2, h3 {
+    color: #00a2c6;
+  }
+   
+  /* h3 {
+    color: #00a2c6;
+  } */
+
+
+  /* Memberikan Background-color dan padding pada footer */
+
+  /* Note : Padding adalah jarak antara konten dan border */
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* Mengatur Ukuran font menjadi 18px pada nav */
+  nav a {
+    font-size: 18px;
+    font-weight: 400; /* Mengatur Ketebalan font Menjadi 400 */
+    text-decoration: none; /* Mengatur Dekorasi teks menjadi tidak ada */
+    color: white;
+  }
+
+  /* Mengubah Style Jika elemen disorot oleh kursor */
+  nav a:hover {
+    font-weight: bold;
+  }
+
+  /* pada class Profile carikan saya elemen header */
+  .profile header {
+    text-align: center;
+  }
+
+  .featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover; /* Gambar penuh di dalam elemen tanpa merusak bentuknya, tapi bisa terpotong. */
+    object-position: center; /* Gambar dipotong dari tengah, jadi bagian utama tetap terlihat. */
+  }
+
+  .profile img {
+    width: 200px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+  }
+
+  .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+  }
+
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav li {
+    list-style-type: none;
+  }
+
+  nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    /* agar elemen navigasi selalu berada di atas jendela browser saat user melakukan scrolling. */
+    top: 0;
+ }
+
+ main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+/* Digunakan untuk responsif Web */
+/* Cara Baca : Jika Screen saat ini lebar maximal 1200px maka jalankan... */
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}

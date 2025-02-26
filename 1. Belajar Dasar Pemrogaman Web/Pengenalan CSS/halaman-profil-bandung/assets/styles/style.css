@@ -1,0 +1,26 @@
+
+/* Merubah Font Pada Seluruh Halaman body */
+body {
+    font-family: sans-serif;
+}
+
+/* Menetapkan Warna pada setiap elemen yang diperlukan */
+
+/* Karena Styling h2 dan h3 sama maka kita gabungkan dengan teknik yang bernama group selector */
+h2, h3 {
+    color: #00a2c6;
+  }
+   
+  /* h3 {
+    color: #00a2c6;
+  } */
+
+
+  /* Memberikan Background-color dan padding pada footer */
+
+  /* Note : Padding adalah jarak antara konten dan border */
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+  }

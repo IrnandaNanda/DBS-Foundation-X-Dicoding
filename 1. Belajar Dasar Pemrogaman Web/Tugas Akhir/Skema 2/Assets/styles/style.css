@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+        --primary-color: #ffff;
+        --secondary-color: #023e8a;
+        --tertiary-color: #191314;
+        --bg-color: #f8f9fa;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'poppins', sans-serif;
+}
+
+/* header Start */
+header h1 span {
+    color: var(--secondary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 19px 32px;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    transition: .5s;
+}
+
+header nav ul li a:hover {
+    font-weight: bold;
+}
+
+header button {
+ /* color: var(--bg-color);
+ padding: 1.5rem;
+ border: 0;
+ border-radius: 16px; */
+
+ display: none;
+ padding: 8px;
+ border: 0;
+ border-radius: 14px;
+
+ font-weight: bold;
+ font-size: 20px;
+ color: var(--tertiary-color);
+
+ background-color: transparent;
+ cursor: pointer;
+}
+
+header button:hover {
+    background-color: #f4f4f4;
+}
+/* Header End */
+
+/* Main Content */
+main {
+    padding: 16px 32px;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+main .content {
+    flex: 2; /* Kolom kiri lebih besar */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .content article {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    background-color: var(--primary-color);
+}
+
+main aside {
+    flex: 1; /* Kolom kanan lebih kecil */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main aside .cards {
+    display: flex;
+    gap: 20px;
+}
+
+main aside .cards .card-1,
+main aside .cards .card-2 {
+    flex: 1;
+    padding: 2.4rem;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+main aside .cards-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    background-color: var(--primary-color);
+    align-items: center;
+}
+
+main aside .cards-2 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 0;
+    border-radius: 12px;
+}
+
+main aside .cards-2 button {
+    padding: .8rem;
+    border: 0;
+    border-radius: 12px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+main aside .cards-2 button:hover {
+    background-color: var(--bg-color);
+    transition: .3s ease-in-out;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+} 
+
+main .content article .card button {
+    margin-top: 12px;
+    padding: .8rem;
+    border: 0;
+    border-radius: 12px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+main .content article .card button:hover {
+    background-color: var(--bg-color);
+    transition: .3s ease-in-out;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+/* Main Content End */
+
+/* Footer Start */
+footer{
+    background-color: var(--secondary-color);
+    padding: 13px;
+    color: white;
+    margin-top: 20px;
+    /* font-weight: 600; */
+    text-align: center;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* z-index: 999; */
+}
+/* Footer End */
+
+
+/* Responsif Mobile Start */
+@media (max-width: 750px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header .drawer-button {
+        display: inline-block;
+    }
+
+    header nav {
+        background-color: white;
+        min-height: 100vh;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        transform: translateX(-200px);
+        transition: transform .3s ease-in-out;
+    }
+
+    header nav ul li, 
+    header nav ul li a {
+        display: block;
+    }
+
+    header nav.open {
+        transform: translateX(0);
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+} 
+/* responsif mobile End */
+

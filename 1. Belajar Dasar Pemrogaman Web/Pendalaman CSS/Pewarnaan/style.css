@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif; /* Merubah Font Default menjadi sans-serif */
+  }
+  
+  main {
+    background-color: rgb(235, 255, 213); /* Memberikan Warna latar belakang pada elemen main */
+    padding: 20px 15px; /* Memberikan jarak antara konten dan border / pinggiran elemen */
+  }
+  
+  /* Cara baca symbol ( '>' ) */
+  /* Carikan saya elemen h3 di dalam main */
+  main > h2 {
+    background-color: #4c5450;
+    padding: 15px;
+    color: white; 
+  }
+  
+  main > h3 {
+    background-color: #60d0a8;
+    padding: 15px;
+    color: white; /* Merubah Warna Font Menjadi Putih */
+  }
+  
+  main > p {
+    background-color: hsl(56, 62%, 85%);
+    padding: 20px;
+  }

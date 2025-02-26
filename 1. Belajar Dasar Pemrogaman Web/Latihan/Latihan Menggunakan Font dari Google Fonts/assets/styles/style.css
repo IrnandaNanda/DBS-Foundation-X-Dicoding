@@ -1,0 +1,45 @@
+
+/* Merubah Font Pada Seluruh Halaman body */
+body {
+    font-family: Quicksand , Cursive;
+}
+
+/* Menetapkan Warna pada setiap elemen yang diperlukan */
+
+/* Karena Styling h2 dan h3 sama maka kita gabungkan dengan teknik yang bernama group selector */
+h2, h3 {
+    color: #00a2c6;
+  }
+   
+  /* h3 {
+    color: #00a2c6;
+  } */
+
+
+  /* Memberikan Background-color dan padding pada footer */
+
+  /* Note : Padding adalah jarak antara konten dan border */
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* Mengatur Ukuran font menjadi 18px pada nav */
+  nav a {
+    font-size: 18px;
+    font-weight: 400; /* Mengatur Ketebalan font Menjadi 400 */
+    text-decoration: none; /* Mengatur Dekorasi teks menjadi tidak ada */
+  }
+
+  /* Mengubah Style Jika elemen disorot oleh kursor */
+  nav a:hover {
+    font-weight: bold;
+  }
+
+  /* pada class Profile carikan saya elemen header */
+  .profile header {
+    text-align: center;
+  }

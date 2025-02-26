@@ -1,0 +1,95 @@
+body {
+  /* Menetapkan jenis font yang diterapkan pada target */
+  font-family: Cursive;
+}
+
+/* 
+Serif: jenis font yang memiliki runcing pada garis akhir karakternya. Times New Roman merupakan salah satu jenis serif font.
+Sans-serif: jenis font yang tidak meruncing pada garis akhir karakternya. Contohnya, “Open Sans”, “Fira Sans” dan lainnya.
+Monospace: jenis font yang memiliki nilai lebar tiap karakternya sama. Consolas merupakan salah satu jenisnya.
+Cursive: jenis font yang tampak seperti handwriting atau hasil tulisan tangan.
+Fantasy: jenis font yang merepresentasikan karakteristik yang menyenangkan.
+System-ui: jika menerapkan nilai ini maka font yang diterapkan akan sama seperti font yang digunakan pada sistem operasi kita.
+Math: jenis font yang digunakan untuk penulisan rumus-rumus matematika.
+Emoji: jenis font yang digunakan untuk menampilkan emoji.
+Fangsong: jenis font yang menampilkan gaya penulisan Chinese.
+  */
+
+/* Rule tidak akan diterapkan pada target karena kesalahan penulisan nilai properti */
+h1 {
+  font-size: 1.5 em;
+}
+
+/* Font - Style */
+.normal {
+    font-weight: normal;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .bolder {
+    font-weight: bolder;
+  }
+  
+  .lighter {
+    font-weight: lighter;
+  }
+  
+  .fw100 {
+    font-weight: 100;
+  }
+  
+  .fw200 {
+    font-weight: 200;
+  }
+  
+  .fw300 {
+    font-weight: 300;
+  }
+  
+  .fw400 {
+    font-weight: 400;
+  }
+  
+  .fw500 {
+    font-weight: 500;
+  }
+  
+  .fw600 {
+    font-weight: 600;
+  }
+  
+  .fw700 {
+    font-weight: 700;
+  }
+  
+  .fw800 {
+    font-weight: 800;
+  }
+  
+  .fw900 {
+    font-weight: 900;
+  }
+/* ====== */
+
+
+/* Font - Style */
+.normal {
+    font-style: normal;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .oblique {
+    font-style: oblique;
+  }
+/* =========== */
+
+h2 {
+    font-variant: small-caps;
+  }
+  
