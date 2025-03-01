@@ -18,6 +18,7 @@ for (i = 0; i < 10; i++) { // Seharusnya code print out sebanyak 10 kalit
 for (x = 1; x < 10; x ++) {
     if (x === 5) { // Ketika variabel i sama dengan 5 maka variabel tersebut tidak akan ditampilkan
         continue // Dan akan tetap melanjutkan perulangan
+        console.log('hai')
     }
     console.log(x)
 }

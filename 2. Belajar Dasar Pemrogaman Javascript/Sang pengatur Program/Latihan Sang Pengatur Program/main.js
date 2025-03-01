@@ -27,12 +27,12 @@ function checkGrades(grades) {
 }
 
 // ? Try-Catch digunakan untuk menangani exception ketika function checkGrades error.
-try {
-    const studentGrades = [90, 11, 80];
-    checkGrades(studentGrades);
-} catch (e) {
-    console.error(e); 
-}
+// try {
+//     const studentGrades = [90, 11, 80];
+//     checkGrades(studentGrades);
+// } catch (e) {
+//     console.error(e); 
+// }
 // ? Di saat function checkGrades menerima argument berupa string, maka blok catch akan dibangkitkan
 
 
