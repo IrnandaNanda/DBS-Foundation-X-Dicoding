@@ -35,7 +35,7 @@ function categorizeNumber(input) {
 
 function prima(num) { // ? Sebuah function dengan parameter num
   if (num < 2) return false; // ? Jika num kurang dari 2 maka berikan nilai false
-  for (i = 2; i <= Math.sqrt(num); i++) {
+  for (i = 2; i <= Math.sqrt(num); i++) { // ? Math.sqrt : Digunakan untuk mencari akar kuadrat
     if (num % i === 0) {
       return false;
     }
