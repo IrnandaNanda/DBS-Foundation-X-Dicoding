@@ -5,9 +5,10 @@
 class SmartPhones {
   constructor(color, brand, model) {
     // * kerangka atau cetakan atau property yang akan diberikan kepada setiap object
-    this.color = color;
-    this.brand = brand;
-    this.model = model;
+
+    this.color = color; // ? this digunakan untuk mengakses variabel yang berada didalam object
+    this.brand = brand; // ? this digunakan untuk mengakses variabel yang berada didalam object
+    this.model = model; // ? this digunakan untuk mengakses variabel yang berada didalam object
   }
 
   charging() {
