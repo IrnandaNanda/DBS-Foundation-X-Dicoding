@@ -35,8 +35,8 @@ class Persons {
   }
   
   // Membuat instance dari Person
-  const person3 = new Person('Alice', 30);
-  const person4 = new Person('Bob', 25);
+  const person3 = new Persons('Alice', 30);
+  const person4 = new Persons('Bob', 25);
   
   console.log(person3.name); // Output: Alice
   console.log(person4.name); // Output: Bob
