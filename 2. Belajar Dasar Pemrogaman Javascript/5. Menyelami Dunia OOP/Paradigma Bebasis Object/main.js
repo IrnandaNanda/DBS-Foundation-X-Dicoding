@@ -20,5 +20,27 @@ person1.eat();
 person2.eat();
 // ! Ini adalah cara lama membuat class pada javascript 👆👆👆👆
 
+console.log("===========")
 
+// ! Cara membuat class terbaru menggunkan Ecma Script 6 ( ES6 ) 👇👇👇
+class Persons {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+  
+    eat() {
+      console.log(`${this.name} dengan umur ${this.age} is eating`);
+    }
+  }
+  
+  // Membuat instance dari Person
+  const person3 = new Person('Alice', 30);
+  const person4 = new Person('Bob', 25);
+  
+  console.log(person3.name); // Output: Alice
+  console.log(person4.name); // Output: Bob
+  
+  person3.eat(); // Output: Alice is eating
+  person4.eat(); // Output: Bob is eating
 
