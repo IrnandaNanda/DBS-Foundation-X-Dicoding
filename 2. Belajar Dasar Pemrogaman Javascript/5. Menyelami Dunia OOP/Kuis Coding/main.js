@@ -30,8 +30,9 @@
 // Tulis kode di bawah ini
 class Animal {
   constructor(name, age, isMammal) {
+    // ? Property
     this.name = name;
-    this.age = age;
+    this.age = age; // ? Membuat kerangka untuk object
     this.isMammal = isMammal;
 
     // if (name != "string") {
@@ -49,28 +50,34 @@ class Animal {
 }
 
 class Rabbit extends Animal {
-    constructor (name, age) {
-        super(name, age, true);
-    }
+  // ? membuat class inheritance rabbit dari parent/supClass Animal
+  constructor(name, age) {
+    // ? Overidding Constructor
+    super(name, age, true); // ? Menambahkan syntax "super" untuk mengetahui property apa saja yang diwarisikan dari parentnya
+  }
 
-
-    eat () {
-        return (`${this.name} Sedang makan!`)
-    }
+  eat() {
+    return `${this.name} Sedang makan!`;
+  }
 }
 
 class Eagle extends Animal {
-    constructor (name, age) {
-        super (name, age, true)
-    }
+  // ? membuat class inheritance eagle dari parent/supClass Animal
+  constructor(name, age) {
+    // ? Overidding Constructor
+    super(name, age, false); // ? Menambahkan syntax "super" untuk mengetahui property apa saja yang diwarisikan dari parentnya
+  }
 
-    fly () {
-        return (`${this.name} Sedang terbang!`)
-    }
+  fly() {
+    return `${this.name} Sedang terbang!`;
+  }
 }
 
-const myRabbit = new Rabbit('Labi', 2)
-console.log(myRabbit.eat())
+const myRabbit = new Rabbit("Labi", 2); // ? Membuat object berdasarkan kerangka dari constructor
+console.log(myRabbit.eat()); // ? Memanggil method dari child object
 
-const myEagle = new Eagle('Elo', 4)
-console.log(myEagle.fly())
+const myEagle = new Eagle("Elo", 4); // ? Membuat object berdasarkan kerangka dari constructor
+console.log(myEagle.fly()); // ? Memanggil method dari child object
+
+console.log(myEagle);
+console.log(myRabbit);
