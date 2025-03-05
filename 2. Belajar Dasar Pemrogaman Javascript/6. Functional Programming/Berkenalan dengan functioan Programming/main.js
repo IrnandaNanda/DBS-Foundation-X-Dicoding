@@ -21,3 +21,4 @@ const namaBaruDenganTambahanTanda = names.map((nama) => `${nama}!`);
 console.log(newNamesWithExcMark); 
 // gaya deklaratif yang notabene dianut dalam paradigma FP
 // ? End ++++
+
