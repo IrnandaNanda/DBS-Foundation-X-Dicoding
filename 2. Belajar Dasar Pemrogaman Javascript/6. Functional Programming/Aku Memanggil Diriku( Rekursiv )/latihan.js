@@ -3,7 +3,7 @@
 // ? Sebelum menggunakan rekursive
 function faktorialLooping(n) {
     let hasil = 1;
-    for(i = n; i > 0; i--) { // Nilai dari i adalah parameter n, jika i kurang dari 0, maka kurangi niai i
+    for(i = n; i > 0; i--) { // Nilai dari i adalah parameter n, jika i lebih dari 0, maka kurangi niai i
         hasil *= i; // variabel hasil sama dengan nilai i dikali hasil
     }
     return hasil // kembalikan nilai dari variabel hasil
