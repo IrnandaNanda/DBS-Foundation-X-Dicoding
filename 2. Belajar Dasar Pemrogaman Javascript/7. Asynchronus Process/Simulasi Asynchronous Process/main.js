@@ -4,7 +4,7 @@
 //   console.log('Hello, world!'); // ? Hello world akan muncul setelah 3 detik karena kita menggunakan setTimeout
 // }, estimationTime);
 
-import { makeCoffee } from './coffe';
+import { makeCoffee } from './coffe.js';
 
 console.log('Saya memesan kopi di kafe.');
 
