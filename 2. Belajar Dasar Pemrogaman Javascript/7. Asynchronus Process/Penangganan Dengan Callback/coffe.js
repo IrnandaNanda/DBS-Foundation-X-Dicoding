@@ -12,3 +12,16 @@ export function makeCoffee(callback) {
       callback()
     }, estimationTime);
   }
+
+  export function sendCoffee(callback) {
+    const estimationTime = 2000;
+  
+    console.log('Pramusaji sedang mengantarkan kopi pesanan');
+  
+    setTimeout(() => {
+      // Do some tasks to send coffee...
+  
+      console.log('Pramusaji sudah sampai ke meja.');
+      callback();
+    }, estimationTime);
+  }

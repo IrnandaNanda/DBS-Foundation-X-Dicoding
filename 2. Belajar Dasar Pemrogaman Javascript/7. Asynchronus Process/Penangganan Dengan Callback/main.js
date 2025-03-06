@@ -1,8 +1,10 @@
-import { makeCoffee } from "./coffe.js";
+import { makeCoffee, sendCoffee } from './coffe.js';
 
-console.log("Saya memesan kopi di kafe.");
+console.log('Saya memesan kopi di kafe.');
 
 makeCoffee(() => {
-  console.log("Pramusaji memberikan kopi pesanan.");
-  console.log("Saya mendapatkan kopi dan menghabiskannya.");
+  sendCoffee(() => {
+    console.log('Pramusaji memberikan kopi pesanan.');
+    console.log('Saya mendapatkan kopi dan menghabiskannya.');
+  });
 });
