@@ -13,15 +13,14 @@ export function makeCoffee(callback) {
     }, estimationTime);
   }
 
-  export function sendCoffee(callback) {
+  export function sendCoffee(callback) { // Menambahkan callback di parameter
     const estimationTime = 2000;
   
     console.log('Pramusaji sedang mengantarkan kopi pesanan');
   
     setTimeout(() => {
       // Do some tasks to send coffee...
-  
       console.log('Pramusaji sudah sampai ke meja.');
-      callback();
+      callback(); // Membuat function callback
     }, estimationTime);
   }
