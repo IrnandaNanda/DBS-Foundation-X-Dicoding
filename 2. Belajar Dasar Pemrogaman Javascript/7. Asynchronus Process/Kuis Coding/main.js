@@ -15,6 +15,7 @@ function processData(data) {
   //   return Promise.resolve(data);
 
   return Promise.all(data.map(({ delay, simulateError }) => API.fetch(delay, simulateError)));
+  // Kembalikan semua promise
 }
 
 processData(sampleErrorData).then(console.log).catch(console.log); // Throw exception: Error from delay 50
